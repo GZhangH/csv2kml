@@ -151,6 +151,19 @@ const tpl = `<?xml version="1.0" encoding="utf-8" ?>
     <name>trajectory</name>
     <description>record trajectory path</description>
     <Style><LineStyle>
+        <color>ff00ffff</color></LineStyle><PolyStyle><fill>0</fill>
+    </PolyStyle></Style>
+        <LineString>
+        <altitudeMode>absolute</altitudeMode>
+        <coordinates>
+		{{.LLA}}
+        </coordinates>
+        </LineString>
+    </Placemark>
+    <Placemark>
+    <name>ground trajectory</name>
+    <description>record trajectory path</description>
+    <Style><LineStyle>
         <color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill>
     </PolyStyle></Style>
         <LineString>
